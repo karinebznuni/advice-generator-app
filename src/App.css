@@ -1,0 +1,83 @@
+#root {
+  --background-color: hsl(218, 23%, 16%);
+  --text-color: hsl(193, 38%, 86%);
+  --card-bg-color: hsl(217, 19%, 24%);
+  --neon-green: hsl(150, 100%, 66%);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 16px);
+  background-color: var(--background-color);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+  height: auto;
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+}
+
+.title{
+  color: var(--neon-green);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.advice{
+  color: var(--text-color);
+  text-align: center;
+  font-size: 25px;
+}
+
+.divider{
+  width: 80%;
+}
+
+.dice-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -30px;
+}
+
+.dice-icon:hover {
+  box-shadow: 0 0 10px 2px var(--neon-green);
+  cursor: pointer;
+}
+
+.rotate {
+  animation: rotateAnimation 1s infinite linear;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .title {
+      font-size: 14px;
+  }
+
+  .advice {
+      font-size: 20px;
+  }
+
+}
