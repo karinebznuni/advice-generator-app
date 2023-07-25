@@ -22,6 +22,7 @@ function App() {
       setAdviceNumber(number);
       setAdviceText(text);
     } catch (error) {
+      console.log(error);
     } finally {
       setTimeout(() => {
         setIsLoading(false);
