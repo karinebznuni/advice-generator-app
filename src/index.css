@@ -1,5 +1,12 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  --background-color: hsl(218, 23%, 16%);
+  --text-color: hsl(193, 38%, 86%);
+  --card-bg-color: hsl(217, 19%, 24%);
+  --neon-green: hsl(150, 100%, 66%);
 }

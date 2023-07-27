@@ -1,44 +1,39 @@
-#root {
-  --background-color: hsl(218, 23%, 16%);
-  --text-color: hsl(193, 38%, 86%);
-  --card-bg-color: hsl(217, 19%, 24%);
-  --neon-green: hsl(150, 100%, 66%);
+html,
+body {
+  height: 100%;
 }
-
-.container{
+body {
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: calc(100vh - 16px);
-  background-color: var(--background-color);
 }
 
 .card {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 30%;
-  height: auto;
+  max-width: 500px;
   background-color: var(--card-bg-color);
   border-radius: 10px;
+  padding: 20px;
 }
 
-.title{
+.title {
   color: var(--neon-green);
   font-size: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
-.advice{
+.advice {
   color: var(--text-color);
   text-align: center;
   font-size: 25px;
 }
 
-.divider{
+.divider {
   width: 80%;
 }
 
@@ -50,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -30px;
+  margin-bottom: -50px;
 }
 
 .dice-icon:hover {
@@ -71,13 +66,30 @@
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 900px) {
   .title {
-      font-size: 14px;
+    font-size: 25px;
   }
 
   .advice {
-      font-size: 20px;
+    font-size: 35px;
   }
 
+  .card {
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .advice {
+    font-size: 30px;
+  }
+  .card {
+    min-height: 300px;
+    max-width: 300px;
+  }
 }
