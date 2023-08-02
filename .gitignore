@@ -25,3 +25,6 @@ dist-ssr
 
 # Design 
 design/*
+
+# Environment Variables 
+.env
