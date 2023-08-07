@@ -13,7 +13,7 @@ function App() {
     try {
       setIsLoading(true);
 
-      const response = await fetch("https://api.adviceslip.com/advice");
+      const response = await fetch(import.meta.env.VITE_API_URL);
       const data = await response.json();
       const slip = data.slip;
       const number = slip.id;
