@@ -24,7 +24,9 @@ function App() {
     } catch (error) {
       console.log(error);
     } finally {
-      setIsLoading(false);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 700);
     }
   };
 
@@ -38,8 +40,11 @@ function App() {
         <h1 className="title">ADVICE #{adviceNumber}</h1>
         <span className="advice">{adviceText}</span>
         <img src={divider} alt="" className="divider" />
-        <div className={`dice-icon ${isLoading && "rotate"}`}>
-          <img src={dice} alt="" onClick={getAdvice} />
+        <div
+          className={`dice-icon ${isLoading && "rotate"}`}
+          onClick={getAdvice}
+        >
+          <img src={dice} alt="" />
         </div>
       </div>
     </>
