@@ -46,6 +46,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: -50px;
+  border: none;
 }
 
 .dice-icon:hover {
@@ -63,20 +64,6 @@ body {
   }
   to {
     transform: rotate(180deg);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .title {
-    font-size: 25px;
-  }
-
-  .advice {
-    font-size: 35px;
-  }
-
-  .card {
-    min-height: 300px;
   }
 }
 
