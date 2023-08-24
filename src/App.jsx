@@ -8,7 +8,7 @@ function App() {
   const [adviceNumber, setAdviceNumber] = useState(null);
   const [adviceText, setAdviceText] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  console.log("hi");
+
   const getAdvice = async () => {
     try {
       setIsLoading(true);
