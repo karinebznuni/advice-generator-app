@@ -47,6 +47,12 @@ body {
   align-items: center;
   margin-bottom: -50px;
   border: none;
+  transition: transform 100ms ease-in;
+  transform: scale(1);
+}
+
+.dice-icon:active {
+  transform: scale(1.1);
 }
 
 .dice-icon:hover {
@@ -77,6 +83,6 @@ body {
   }
   .card {
     min-height: 300px;
-    max-width: 300px;
+    margin: 0 50px;
   }
 }
